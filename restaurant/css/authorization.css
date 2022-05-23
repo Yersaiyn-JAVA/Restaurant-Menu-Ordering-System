@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+body{
+	background-color: #f43333;
+	font-family: 'Open Sans', sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.form{
+	background-color: #fff;
+	width: 75vw;
+	box-shadow:  0px 0px 15px 1px #ff8080;
+	overflow: hidden;
+	position: relative;
+	height: 85vh;
+	background-color: #f7faf7;
+}
+.form a{
+	text-decoration: none;
+	transition: 0.5s;
+}
+.form ul{
+	list-style: none;
+}
+.form input{
+	display: block;
+	width: 100%;
+}
+.tab1,
+.tab2{
+	width: 100%;
+	height: inherit;
+	transition: .3s ease;
+	position: absolute;
+	left: -100%;
+}
+.tab_display{
+	left: 0;
+}
+.left-auth,
+.right-auth,
+.left-reg,
+.right-reg{
+	width: 48%;
+	height: inherit;
+	display: block;
+}
+.left-auth,
+.left-reg{
+	float: left;
+}
+.right-auth,
+.right-reg{
+	float: right;
+}
+.left-auth h1{
+	width: 80%;
+	display: block;
+	margin: 75px auto 35px;
+}
+.right-reg h1{
+	width: 80%;
+	display: block;
+	margin: 75px auto 35px;
+}
+.left-reg,
+.right-auth{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.left-reg{
+	padding-right: 7px;
+}
+.right-auth{
+	padding-left: 7px;
+}
+
+.input-box{
+	width: 100%;
+	margin: 25px auto 0;
+}
+.input-box input{
+	width: 80%;
+	height: 2.95vw;
+	padding-left: 35px;
+	font-size: 1.3vw;
+	border-radius: 7px;
+	background: transparent;
+	color: #f43333;
+	border: 1.5px solid #f43333;
+	margin: auto;
+	font-weight: 300;
+	outline: none;
+	transition: .3s ease;
+}
+.input-box input:focus{
+	color: #fff;
+	background: #f43333;
+	border: none;
+}
+.input-box input:focus::-webkit-input-placeholder{
+	color: #fff;
+}
+::-webkit-input-placeholder{
+	color: #f43333;
+	font-weight: 300;
+}
+::-moz-placeholder{
+	color: #f43333;
+	font-weight: 300;
+}
+:-moz-placholder{
+	color: #f43333;
+	font-weight: 300;
+}
+:-ms-input-placeholder{
+	color: #f43333;
+	font-weight: 300;
+}
+#auth_comp,
+#reg_comp,
+.toogle{
+	width: 50%;
+	height: 3vw;
+	font-size: 1.3vw;
+	color: #fff;
+	border-radius: 7px;
+	background-color: #f43333;
+	border: none;
+	font-weight: bold;
+	outline: none;
+	transition: .3s ease;
+	cursor: pointer;
+	display: block;
+	margin: 35px auto;
+}
+#auth_comp:hover,
+#reg_comp:hover,
+.toogle:hover{
+	transform: scale(1.1);
+}
+
+#auth_comp i,
+#reg_comp i,
+.toogle i{
+	padding-left: 15px;
+}
